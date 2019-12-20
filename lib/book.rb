@@ -1,4 +1,4 @@
-class Book
+=begin class Book
   
   def initialize(title)
     @title = title 
@@ -35,10 +35,27 @@ class Book
   def turn_page
     puts "Flipping the page...wow, you read fast!"
   end
-  
-  
 end
 
 
 Book.new("And Then There Were None")
+=end
+
+#code above is the NON attribute accessors SOLUTION
+
+class Book
+  attr_accessor :author, :page_count, :genre
+  attr_reader :title
+
+  
+  def initialize(title)
+    @title = title
+  end
+  
+  def turn_page
+    puts "Flipping the page...wow, you read fast!"
+  end
+end
+  
+
 
