@@ -1,3 +1,7 @@
+class Book
+this book has 100 pages
+end
+
 describe 'Book' do
   describe '::new' do
     it 'gets initialized with a title' do
